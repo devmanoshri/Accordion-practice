@@ -1,0 +1,22 @@
+<h3>
+  <button
+    type="button"
+    aria-expanded="true"
+    class="accordion-trigger"
+    aria-controls="sect1"
+    id="accordion1id"
+  >
+    <span class="accordion-title">
+      <ng-content select="[header]"></ng-content>
+      <span class="accordion-icon"></span>
+    </span>
+  </button>
+</h3>
+<div
+  id="sect1"
+  role="region"
+  aria-labelledby="accordion1id"
+  class="accordion-panel"
+>
+  <ng-content></ng-content>
+</div>
